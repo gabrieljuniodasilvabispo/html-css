@@ -4,6 +4,7 @@
 * {
     margin: 0px;
     padding: 0px;
+
     min-width: 320px;
     max-width: 100%;
 }
@@ -21,7 +22,7 @@ header {
 }
 
 header > h1 {
-    font-size: 130px;
+    font-size: 10vw;
     font-variant: small-caps;
     font-family: 'Passion One';
 }
@@ -49,7 +50,8 @@ section {
     padding-left: 30px;
     line-height: 2em;
     font-family: 'Sriracha';
-    font-size: 3em;
+    font-size: 3.5vw;
+
 }
 
 section.normal {
@@ -64,7 +66,8 @@ section.imagem {
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.404);
-    width: 600px;
+    display: inline-block;
+    padding: 5px;
 }
 
 section#flor {
