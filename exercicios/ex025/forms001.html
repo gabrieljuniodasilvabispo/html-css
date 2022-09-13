@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="nome" id="isobrenome"></p>
+        
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <h1>Meu segundo formulário</h1>
+
+    <form action="cadastro.php" autocomplete="off">
+        <p>nome <input type="text" name="nome" id="nome"></p>
+        <p>input text <input type="text" name="texto" id="texto"></p>
+        <p>input password <input type="password" name="senha" id="senha"></p>
+        <p>input email <input type="email" name="enail" id="email"></p>
+        <p>input url<input type="url" name="url" id="url"></p>
+        <p>input checkbox<input type="checkbox" name="check" id="check"></p>
+        <p>input button<input type="button" value="Button"></p>
+        <p>input submit<input type="submit" value="XESQUEDELE"></p>
+    </form>
+</body>
+</html>
