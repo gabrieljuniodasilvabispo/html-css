@@ -12,6 +12,10 @@ body {
     background-color: lightgrey;
 }
 
+body, html {
+    width: 100vw;
+}
+
 header {
     background-color: gray;
     display: border-box;
