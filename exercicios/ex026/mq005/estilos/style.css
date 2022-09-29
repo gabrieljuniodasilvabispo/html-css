@@ -12,13 +12,14 @@ body {
     background-color: lightgrey;
 }
 
-body, html {
+html {
     width: 100vw;
 }
 
 header {
     background-color: gray;
     display: border-box;
+    width: 100vw;
 }
 
 header > h1 {
@@ -27,7 +28,7 @@ header > h1 {
 }
 
 span#burguer {
-    width: 100vw;
+    width: 96vw;
     background-color: rgb(48, 48, 48);
     color: white;
     display: block;
