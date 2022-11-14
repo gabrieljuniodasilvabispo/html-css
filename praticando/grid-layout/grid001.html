@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando grid</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        .conteiner {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: 100px 100px 100px 100px;
+            /* grid-column-gap: 10px;*/
+            /*grid-row-gap: 10px;*/
+            grid-gap: 10px 10px;
+        }
+
+        .item {
+            background-color: #048;
+            color: white;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .it1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item it1">CFB CURSOS 1</div>
+        <div class="item">CFB CURSOS 2</div>
+        <div class="item">CFB CURSOS 3</div>
+        <div class="item">CFB CURSOS 4</div>
+        <div class="item">CFB CURSOS 5</div>
+        <div class="item">CFB CURSOS 6</div>
+        <div class="item">CFB CURSOS 7</div>
+        <div class="item">CFB CURSOS 8</div>
+        <div class="item">CFB CURSOS 9</div>
+    </div>
+</body>
+</html>
