@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando grid</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .lateral {
+            grid-area: lateral;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .conteiner {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 50px 50px 50px 50px;
+            grid-template-areas: 
+                "header header header header"
+                "main main . lateral"
+                "footer footer footer footer"
+            ;
+        }
+
+        .item {
+            background-color: #048;
+            color: white;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item header">HEADER</div>
+        <div class="item main">MAIN</div>
+        <div class="item lateral">LATERAL</div>
+        <div class="item footer">FOOTER</div>
+    </div>
+</body>
+</html>
