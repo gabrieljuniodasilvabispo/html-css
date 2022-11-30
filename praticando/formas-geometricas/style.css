@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+h1, h2, div {
+    margin-left: 10px;
+}
+
+.quadrado {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+
+.retangulo {
+    background-color: red;
+    width: 200px;
+    height: 100px;
+}
+
+.circulo {
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.triangulo {
+    height: 0;
+    width: 0;
+    border-bottom: 100px solid aqua;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.trapezio {
+    height: 0;
+    width: 100px;
+    border-bottom: 50px solid blue;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+.paralelogramo {
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    transform: skewX(-20deg);
+    margin-left: 20px;
+}
+
+.pentagono {
+    width: 100px;
+    height: 0px;
+    position: relative;
+    display: inline-block;
+    border-top: 70px solid brown;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    margin-top: 50px;
+}
+.pentagono::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -120px;
+    left: -25px;
+    border-bottom: 50px solid brown;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hexagono {
+    
+}
