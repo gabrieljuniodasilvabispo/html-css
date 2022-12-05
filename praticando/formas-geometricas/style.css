@@ -30,12 +30,36 @@ h1, h2, div {
     border-radius: 50%;
 }
 
-.triangulo {
+.triangulo-isosceles {
     height: 0;
     width: 0;
     border-bottom: 100px solid aqua;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
+}
+
+.triangulo-retangulo {
+    height: 0;
+    width: 0;
+    border-bottom: 100px solid green;
+    border-left: 100px solid transparent;
+}
+
+.triangulo-equilatero {
+    height: 0;
+    width: 0;
+    border-bottom: 100px solid yellow;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+
+.triangulo-escaleno {
+    height: 0;
+    width: 0;
+    border-bottom: 100px solid grey;
+    border-left: 80px solid transparent;
+    transform: skewX(-20deg);
+    margin-left: 20px;
 }
 
 .trapezio {
@@ -77,5 +101,32 @@ h1, h2, div {
 }
 
 .hexagono {
-    
+    width: 100px;
+    height: 60px;
+    background-color: cadetblue;
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.hexagono::before {
+    content: " ";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -30px;
+    border-bottom: 30px solid cadetblue;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hexagono::after {
+    content: " ";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid cadetblue;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
 }

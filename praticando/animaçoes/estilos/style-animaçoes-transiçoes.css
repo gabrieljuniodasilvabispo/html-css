@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+.item {
+    width: 100px;
+    height: 100px;
+}
+
+.transitionBackground {
+    transition: background-color 2s;
+}
+
+.transitionBackground:hover {
+    background-color: red;
+}
+
+.transitionSize {
+    transition: transform 0.5s;
+}
+
+.transitionSize:hover {
+    transform: scale(1.5);
+}
+
+.transitionRotate {
+    transition: transform 0.5s;
+}
+
+.transitionRotate:hover {
+    transform: rotateZ(360deg);
+}
+
+.transitionDelay {
+    transition: width 1s 0.5s, height 2s;
+}
+
+.transitionDelay:hover {
+    width: 200px;
+    height: 200px;
+}
+
+.transitionCheckbox {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s;
+}
+
+.transitionCheckbox:checked {
+    transform: rotateY(360deg);
+}
+
+.transitionRadio {
+    width: 50px;
+    height: 50px;
+    transition: transform 1s;
+}
+
+.transitionRadio:checked {
+    transform: scale(1.3);
+}
+
+.transitionText {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    transition: transform 1s;
+}
+
+.transitionText:focus {
+    transform: scaleY(0.5) scaleX(0.7) rotateZ(180deg);
+}

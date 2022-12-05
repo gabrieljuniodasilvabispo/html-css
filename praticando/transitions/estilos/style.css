@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+}
+
+.conteiner {
+    width: 100%;
+    border: 2px solid white;
+    padding: 20px;
+}
+
+.child {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+
+    /*transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    
+    Shorthand para isso: Transition com as propriedades na ordem acima
+
+    transition: all 2s ease-in-out 0s;*/
+
+    /*Temos como também dizer o tempo de transição e aa ordem de transição para cada propriedade*/
+
+    transition: border-radius 1s, transform 2s ease-in;
+}
+
+.child:hover {
+    border-radius: 50%;
+    transform: translateX(900px);
+}
+
+/*
+    TRANSITION-TIMING-FUNCTION :
+
+    ease
+    linear
+    ease-out
+    ease-in-out
+
+    TRANSITION-DELAY: atraso na execução da transição
+
+    TRANSITION-DURATION: tempo de duração da transição
+
+    TRANSITION-PROPERTY: propriedades que irão na transição, recomendado sempre deixar no all
+*/
