@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.item {
+    width: 100px;
+    height: 100px;
+}
+
+.animationFadeIn {
+    animation: fadeIn 2s linear;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
