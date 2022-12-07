@@ -5,6 +5,11 @@
     height: 100px;
 }
 
+.item:hover {
+    animation-play-state: paused;
+}
+
+/*-----------------------------------------------------------------------------*/
 .animationFadeIn {
     animation: fadeIn 2s linear;
 }
@@ -13,3 +18,80 @@
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+.animationFadeOut {
+    animation: fadeIn 2s linear;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+}
+/*-----------------------------------------------------------------------------*/
+
+.animationFadeInFadeOut {
+    animation: FadeInFadeOut 2s linear infinite;
+}
+
+@keyframes FadeInFadeOut {
+    0% {opacity: 1;}
+    50% {opacity: 0.2;}
+    100% {opacity: 1;}
+}
+/*-----------------------------------------------------------------------------*/
+
+.spinner {
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);}
+}
+
+.animationSpinner {
+    animation: rotate 2s linear infinite;
+}
+
+.animationSpinnerEase {
+    animation: rotate 2s ease infinite;
+}
+
+.animationSpinnerEase-Out {
+    animation: rotate 2s ease-out infinite;
+}
+/*-----------------------------------------------------------------------------*/
+
+.position-box {
+    width: 100%;
+    height: 360px;
+    background-color: #444;
+    position: relative;
+}
+
+.animationPosition {
+    position: absolute;
+    animation: position 8s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes position {
+    0% {
+        top: 0; 
+        left: 0;
+    }
+    35% {
+        top: 0;
+        left: calc(100% - 100px);
+    }
+    50% {
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+    }
+    85% {
+        top: calc(100% - 100px);
+        left: 0;
+    }
+    100% {
+        top: 0; 
+        left: 0;
+    }
+}
+/*-----------------------------------------------------------------------------*/
