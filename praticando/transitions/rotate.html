@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotação de paisagem</title>
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+            transition: width 2s, height 2s, transform 1.5s linear 0s;
+        }
+
+        img:hover {
+            width: 500px;
+            height: 500px;
+            transform: rotate(360deg);
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 50%;
+            transition: transform 1s linear;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            from {transform: rotateY(0deg);}
+            to {transform: rotateY(360deg);}
+        }
+
+        div:hover {
+            transform: rotateY(360deg);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Rotação</h1>
+    <img src="https://img.myloview.com.br/posters/paisagem-natural-de-um-lago-700-72395006.jpg" alt="">
+
+    <div>Xesq</div>
+</body>
+</html>

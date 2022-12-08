@@ -95,3 +95,14 @@
     }
 }
 /*-----------------------------------------------------------------------------*/
+
+.animationContent::after {
+    content: "";
+    animation: promotion 2s linear infinite;
+}
+
+@keyframes promotion {
+    0% {content: 'Promoção';}
+    50% {content: '';}
+    60% {content: 'Frete Grátis';}
+}
