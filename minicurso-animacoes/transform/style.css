@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.box {
+    outline: 5px solid red;
+}
+
+img {
+    transform: translateX(100px) scale(1.5) rotate(-15deg) skew(-15deg);
+}
