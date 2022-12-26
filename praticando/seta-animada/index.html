@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setinha animada</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            animation: arrow-animation 1s ease-in alternate infinite;
+        }
+
+        @keyframes arrow-animation {
+            from {
+                transform: translateY(0px);
+            }
+
+            to {
+                transform: translateY(30px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <img src="seta-para-baixo.png" alt="Setinha">
+</body>
+</html>
