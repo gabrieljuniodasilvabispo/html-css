@@ -16,12 +16,49 @@ h1, h2, div {
     width: 100px;
     height: 100px;
 }
+/*----------------------------------------------------------------------------------------------*/
+
+.cubo {
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg);
+    display: inline-block;
+    position: relative;
+}
+.cubo::after{
+    content: " ";
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: -20px;
+    left: 75px;
+    bottom: 0px;
+    right: 0;
+    transform: rotateY(50deg);
+}
+.cubo::before{
+    content: " ";
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -50px;
+    left: 0;
+    bottom: 0;
+    right: -50px;
+    transform: rotateY(50deg);
+}
+/*----------------------------------------------------------------------------------------------*/
 
 .retangulo {
     background-color: red;
     width: 200px;
     height: 100px;
 }
+/*----------------------------------------------------------------------------------------------*/
 
 .circulo {
     background-color: blueviolet;
@@ -29,6 +66,7 @@ h1, h2, div {
     width: 100px;
     border-radius: 50%;
 }
+/*----------------------------------------------------------------------------------------------*/
 
 .triangulo-isosceles {
     height: 0;
@@ -37,6 +75,7 @@ h1, h2, div {
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
 }
+/*----------------------------------------------------------------------------------------------*/
 
 .triangulo-retangulo {
     height: 0;
@@ -44,6 +83,7 @@ h1, h2, div {
     border-bottom: 100px solid green;
     border-left: 100px solid transparent;
 }
+/*----------------------------------------------------------------------------------------------*/
 
 .triangulo-equilatero {
     height: 0;
@@ -52,6 +92,7 @@ h1, h2, div {
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
 }
+/*----------------------------------------------------------------------------------------------*/
 
 .triangulo-escaleno {
     height: 0;
@@ -61,6 +102,7 @@ h1, h2, div {
     transform: skewX(-20deg);
     margin-left: 20px;
 }
+/*----------------------------------------------------------------------------------------------*/
 
 .trapezio {
     height: 0;
@@ -69,6 +111,7 @@ h1, h2, div {
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
 }
+/*----------------------------------------------------------------------------------------------*/
 
 .paralelogramo {
     width: 200px;
@@ -77,6 +120,7 @@ h1, h2, div {
     transform: skewX(-20deg);
     margin-left: 20px;
 }
+/*----------------------------------------------------------------------------------------------*/
 
 .pentagono {
     width: 100px;
@@ -99,6 +143,7 @@ h1, h2, div {
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
 }
+/*----------------------------------------------------------------------------------------------*/
 
 .hexagono {
     width: 100px;
